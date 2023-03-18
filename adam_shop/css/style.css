@@ -1998,7 +1998,7 @@
 }
  .new-account-login h5 {
      font-size: 18px;
-     color: #1111111;
+     color: #d33b33;
      font-weight: 600;
 }
  .new-account-login h5 a:hover{
@@ -2403,21 +2403,15 @@
     padding: 0;
     list-style-type: none;
 }
-#submit-button{
-    padding: 5px 20px;
-    margin-top: 10px;
+.btn-evaluate{
+    border: none;
+    background-color: rgba(250, 249, 249, 0);
 }
-.star::before{
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f005';
+.fa-star{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
 }
- 
+
 
 
 
