@@ -4209,7 +4209,7 @@ body.top-menu .navbar-left .customizer-trigger+.top-menu {
     background: var(--main-color);
     -webkit-box-shadow: 0 5px 20px rgba(var(--color-lighten-rgba), .05);
     box-shadow: 0 5px 20px rgba(var(--color-lighten-rgba), .05);
-    height: 100px;
+    height: 80px;
 }
 
 .navbar {
@@ -37326,8 +37326,9 @@ body:after {
 
     .navbar-left .navbar-brand img,
     .navbar-left .navbar-brand svg {
+        margin-top: 10px;
         max-width: 130px;
-        min-width: 130px
+        min-width: 10px;
     }
 
     .navbar-right__menu .dropdown-wrapper {
@@ -39317,6 +39318,7 @@ body:after {
     }
 }
 .dark {
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
+    margin-left: 20px;
 }
