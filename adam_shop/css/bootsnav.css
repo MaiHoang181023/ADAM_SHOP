@@ -1045,7 +1045,6 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
         margin-left: 10px;
 		position: relative;
 		top: 0;
-        font: var(--fa-font-solid);
     }
     
     nav.navbar.bootsnav li.dropdown.on > a.dropdown-toggle:before{
