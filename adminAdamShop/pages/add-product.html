@@ -1,19 +1,17 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-  <!-- Mirrored from demo.dashboardmarket.com/hexadash-html/ltr/add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Mar 2023 05:39:08 GMT -->
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HexaDash</title>
+    <title>ADAM SHOP</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/plugin.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../adam_shop/images/logo-removebg-preview.png">
 
     <link rel="stylesheet" href="../css/line.css">
   </head>
@@ -31,8 +29,8 @@
         <div class="navbar-left">
           <div class="logo-area">
             <a class="navbar-brand" href="index.html">
-              <img class="dark" src="../img/logo-dark.png" alt="logo">
-              <img class="light" src="../img/logo-white.png" alt="logo">
+              <img class="dark" src="../../adam_shop/images/logo-removebg-preview.png" alt="logo">
+              <img class="light" src="../../adam_shop/images/logo-removebg-preview.png" alt="logo">
             </a>
             <a href="#" class="sidebar-toggle">
               <img class="svg" src="../img/svg/align-center-alt.svg" alt="img"></a>
@@ -324,7 +322,7 @@
                       </div>
                       <div>
                         <h6>Rabbi Islam Rony</h6>
-                        <span>UI Designer</span>
+                        <span>ADMIN</span>
                       </div>
                     </div>
                     <div class="nav-author__options">
@@ -476,13 +474,13 @@
             <div class="col-lg-12">
               <div class="shop-breadcrumb">
                 <div class="breadcrumb-main">
-                  <h4 class="text-capitalize breadcrumb-title">Thêm xe mới</h4>
+                  <h4 class="text-capitalize breadcrumb-title">Thêm sản phẩm mới</h4>
                   <div class="breadcrumb-action justify-content-center flex-wrap">
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#"><i class="uil uil-estate"></i>Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Thêm xe mới</li>
+                        <li class="breadcrumb-item active" aria-current="page">Thêm sản phẩm mới</li>
                       </ol>
                     </nav>
                   </div>
@@ -498,144 +496,51 @@
                 <div class="mb-30 row">
                   <div class="col-lg-6">
                     <div class="card-header">
-                      <h6 class="fw-500 h3">Thông tin xe</h6>
+                      <h6 class="fw-500 h3">Thông tin sản phẩm</h6>
                     </div>
                     <div class="add-product__body px-sm-40 px-20">
                       <div class="form-group">
-                        <label for="nameCar">Tên xe</label>
-                        <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="tên xe">
+                        <label for="nameCar">Tên sản phẩm</label>
+                        <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Tên sản phẩm">
                       </div>
                       <div class="form-group">
                         <div class="countryOption">
                           <label for="type">
-                            Loại xe
+                            Loại sản phẩm
                           </label>
-                          <select name="typeCar" class="js-example-basic-single js-states form-control" id="type">
-                            <option value="1">xe hơi</option>
-                            <option value="2">xe bán tải</option>
-                          </select>
+                          <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Loại sản phẩm">
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="date">Đời xe</label>
-                        <input type="text" class="form-control" name="date" id="date" placeholder="loai xe">
-                      </div>
-                      <div class="form-group">
-                        <label for="seats">Số ghế</label>
-                        <input type="text" class="form-control" name="seats" id="seats" placeholder="số ghế">
                       </div>
                       <div class="form-group">
                         <div class="countryOption">
                           <label for="brand">
                             Thương hiệu
                           </label>
-                          <select form="formThemXe" name="brand" class="js-example-basic-single js-states form-control"
-                            id="brand">
-                            <option value="1">Toyota</option>
-                            <option value="2">Kia</option>
-                          </select>
+                          <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Tên thương hiệu">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="dungTich">Dung tích xi lanh</label>
-                        <input type="text" class="form-control" name="capacity" id="dungTich"
-                          placeholder="dung tích xi lanh">
+                        <label for="nameOwner">giá sản phẩm</label>
+                        <input type="number" class="form-control" name="nameOwner" id="nameOwner"
+                          placeholder="giá sản phẩm">
                       </div>
                       <div class="form-group">
-                        <label for="color">Màu sơn</label>
-                        <input type="text" class="form-control" id="color" name="color" placeholder="màu sơn">
-                      </div>
-                      <div class="form-group">
-                        <label for="plate">Biển số</label>
-                        <input type="text" class="form-control" name="plate" id="plate" placeholder="biển số">
-                      </div>
-                      <div class="form-group">
-                        <label for="soKhung">Số khung</label>
-                        <input type="text" class="form-control" name="soKhung" id="soKhung" placeholder="số khung">
-                      </div>
-                      <div class="form-group">
-                        <label for="soMay">Số máy</label>
-                        <input type="text" class="form-control" name="soMay" id="soMay" placeholder="số máy">
-                      </div>
-                      <div class="form-group w-100 me-sm-15 form-group-calender">
-                        <label for="datepicker">Đăng ký lần đầu</label>
-                        <div class="position-relative">
-                          <input type="text" name="dangKy" class="form-control" id="datepicker"
-                            placeholder="mm/dd/yyyy">
-                          <a href="#">
-                            <img class="svg" src="../img/svg/chevron-right.svg" alt="chevron-right.svg"></a>
-                        </div>
-                      </div>
-                      <div class="form-group w-100 form-group-calender">
-                        <label for="datepicker2">Hạn đăng kiểm</label>
-                        <div class="position-relative">
-                          <input type="text" name="hanDangKiem" class="form-control" id="datepicker2"
-                            placeholder="mm/dd/yyyy">
-                          <a href="#">
-                            <img class="svg" src="../img/svg/chevron-right.svg" alt="chevron-right.svg"></a>
-                        </div>
-                      </div>
-                      <div class="form-group w-100 form-group-calender">
-                        <label for="datepicker2">Hạn bảo hiểm</label>
-                        <div class="position-relative">
-                          <input type="text" name="baoHiem" class="form-control" id="datepicker2"
-                            placeholder="mm/dd/yyyy">
-                          <a href="#">
-                            <img class="svg" src="../img/svg/chevron-right.svg" alt="chevron-right.svg"></a>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="countryOption">
-                          <label>
-                            Tình trạng xe
-                          </label>
-                          <select name="status" form="formThemXe"
-                            class="js-example-basic-single js-states form-control">
-                            <option value="1">Tốt</option>
-                            <option value="2">Trung bình</option>
-                            <option value="3">Cần bảo trì</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card-header">
-                      <h6 class="fw-500 h3">Thông tin chủ xe</h6>
-                    </div>
-                    <div class="add-product__body px-sm-40 px-20">
-                      <div class="form-group">
-                        <label for="nameOwner">Tên chủ xe</label>
-                        <input type="text" class="form-control" name="nameOwner" id="nameOwner"
-                          placeholder="tên chủ xe">
-                      </div>
-                      <div class="form-group">
-                        <label for="CMT">Số căn cước chủ xe</label>
+                        <label for="CMT">số lượng sản phẩm</label>
                         <input type="text" class="form-control" name="CMTOwner" id="CMT"
-                          placeholder="số căn cước chủ xe">
+                          placeholder="số lượng sản phẩm">
                       </div>
                       <div class="form-group">
-                        <label for="SDT">Số điện thoại chủ xe</label>
+                        <label for="SDT">màu sắc</label>
                         <input type="text" class="form-control" name="SDTOwner" id="SDT"
-                          placeholder="số điện thoại chủ xe">
-                      </div>
-                    </div>
-                    <div class="card-header">
-                      <h6 class="fw-500 h3">Thông tin giá thuê</h6>
-                    </div>
-                    <div class="add-product__body px-sm-40 px-20">
-                      <div class="form-group">
-                        <label for="thueNgay">Giá thuê theo ngày</label>
-                        <input type="text" name="priceD" class="form-control" id="thueNgay"
-                          placeholder="giá thuê theo ngày">
+                          placeholder="Màu sắc">
                       </div>
                       <div class="form-group">
-                        <label for="thueThang">Giá thuê theo tháng</label>
-                        <input type="text" name="priceM" class="form-control" id="thueThang"
-                          placeholder="giá thuê theo tháng">
+                        <label for="SDT">size</label>
+                        <input type="text" class="form-control" name="SDTOwner" id="SDT"
+                          placeholder="size">
                       </div>
                     </div>
+                    
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1">Mô tả</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
@@ -645,7 +550,7 @@
                   <div class="card-body col-lg-6 p-0">
                     <div class="card-body">
                       <div class="card-header">
-                        <h6 class="fw-500 h3">Ảnh bìa xe</h6>
+                        <h6 class="fw-500 h3">Ảnh mô tả</h6>
                       </div>
                       <div class="add-product__body-img px-sm-20 px-10">
                         <label for="upload" class="file-upload__label">
@@ -662,7 +567,7 @@
                         </label>
                         <div class="upload-product-media d-flex justify-content-between align-items-center mt-25">
                           <div class="upload-media-area d-flex">
-                            <img src="../img/food-restaurant-media.png" alt="img">
+                            <img src="../img/10f21pca002cr1---alloy2_1_2.jpg" alt="img">
                             <div class="upload-media-area__title d-flex align-items-center ms-10 flex-wrap">
                               <div>
                                 <p>Product_image.jpg</p>
@@ -680,49 +585,14 @@
 
                     </div>
                   </div>
-                  <div class="card-body col-lg-6 p-0">
-                    <div class="card-body">
-                      <div class="card-header">
-                        <h6 class="fw-500 h3">Ảnh mô tả xe</h6>
-                      </div>
-                      <div class="add-product__body-img px-sm-20 px-10">
-                        <label for="uploadDes" class="file-upload__label">
-                          <span class="upload-product-img d-block">
-                            <span class="file-upload">
-                              <img class="svg" src="../img/svg/upload.svg" alt="">
-                              <input id="uploadDes" class="file-upload__input" type="file" name="desImgs[]" multiple>
-                            </span>
-                            <span class="pera">Drag and drop an image</span>
-                            <span>or <a href="#" class="color-secondary">Browse</a> to
-                              choose a
-                              file</span>
-                          </span>
-                        </label>
-                        <div class="upload-product-media d-flex justify-content-between align-items-center mt-25">
-                          <div class="upload-media-area d-flex">
-                            <img src="../img/food-restaurant-media.png" alt="img">
-                            <div class="upload-media-area__title d-flex align-items-center ms-10 flex-wrap">
-                              <div>
-                                <p>Product_image.jpg</p>
-                                <span>68.8 KB</span>
-                              </div>
-                              <div class="upload-media-area__btn">
-                                <button type="button" class="transparent rounded-circle wh-30 color-danger border-0">
-                                  <img class="svg" src="../img/svg/trash-2.svg" alt="">
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  
 
                     </div>
                   </div>
                   <div class="button-group add-product-btn d-flex justify-content-sm-end justify-content-center mt-40">
-                    <button class="btn btn-light btn-default btn-squared fw-400 text-capitalize">Hủy thêm
-                      xe
+                    <button class="btn btn-light btn-default btn-squared fw-400 text-capitalize">Hủy thêm sản phẩm
                     </button>
-                    <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize">Lưu xe mới
+                    <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize">Lưu sản phẩm mới
                     </button>
                   </div>
                 </div>
@@ -737,7 +607,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="footer-copyright">
-                  <p><span>© 2023</span><a href="#">Sovware</a>
+                  <p><span>© 2023</span><a href="#">Software</a>
                   </p>
                 </div>
               </div>
