@@ -8,12 +8,12 @@
     <title>ADAM SHOP</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/plugin.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../admincss/plugin.min.css">
+    <link rel="stylesheet" href="../admincss/style.css">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="../../adam_shop/images/logo-removebg-preview.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo-removebg-preview.png">
 
-    <link rel="stylesheet" href="../css/line.css">
+    <link rel="stylesheet" href="../admincss/line.css">
   </head>
 
   <body class="layout-light side-menu">
@@ -28,9 +28,9 @@
       <nav class="navbar navbar-light">
         <div class="navbar-left">
           <div class="logo-area">
-            <a class="navbar-brand" href="index.html">
-              <img class="dark" src="../../adam_shop/images/logo-removebg-preview.png" alt="logo">
-              <img class="light" src="../../adam_shop/images/logo-removebg-preview.png" alt="logo">
+            <a class="navbar-brand" href="/admin">
+              <img class="dark" src="../images/logo-removebg-preview.png" alt="logo">
+              <img class="light" src="../images/logo-removebg-preview.png" alt="logo">
             </a>
             <a href="#" class="sidebar-toggle">
               <img class="svg" src="../img/svg/align-center-alt.svg" alt="img"></a>
@@ -376,7 +376,7 @@
           <div class="sidebar__menu-group">
             <ul class="sidebar_nav">
               <li>
-                <a href="index.html">
+                <a href="/admin/?view=index.html">
                   <span class="nav-icon uil uil-create-dashboard"></span>
                   <span class="menu-text">Trang quản trị</span>
                 </a>
@@ -389,15 +389,15 @@
                 </a>
                 <ul>
                   <li class="l_sidebar">
-                    <a href="products.html">Danh sách sản phẩm</a>
+                    <a href="/admin/?view=products.html">Danh sách sản phẩm</a>
                   </li>
                   <li class="l_sidebar">
-                    <a href="add-product.html" class="active">Thêm sản phẩm mới</a>
+                    <a href="/admin/?view=add-product.html" class="active">Thêm sản phẩm mới</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="user-list.html">
+                <a href="/admin/?view=user-list.html">
                   <span class="nav-icon uil uil-user-md"></span>
                   <span class="menu-text">Quản lý nhân viên</span>
                 </a>
@@ -410,10 +410,10 @@
                 </a>
                 <ul>
                   <li class="l_sidebar">
-                    <a href="users-datatable.html">Danh sách khách hàng</a>
+                    <a href="/admin/?view=users-datatable.html">Danh sách khách hàng</a>
                   </li>
                   <li class="l_sidebar">
-                    <a href="message.html">Hỗ trợ khách hàng</a>
+                    <a href="/admin/?view=message.html">Hỗ trợ khách hàng</a>
                   </li>
 
                 </ul>
@@ -430,13 +430,13 @@
                 </a>
                 <ul>
                   <li class="l_sidebar">
-                    <a href="#">Tháng qua</a>
+                    <a href="/admin/?view=chart.html">Tháng qua</a>
                   </li>
                   <li class="l_sidebar">
-                    <a href="#">3 tháng qua</a>
+                    <a href="/admin/?view=chart.html">3 tháng qua</a>
                   </li>
                   <li class="l_sidebar">
-                    <a href="#">Năm qua</a>
+                    <a href="/admin/?view=chart.html">Năm qua</a>
                   </li>
                 </ul>
               </li>
@@ -448,18 +448,18 @@
                 </a>
                 <ul>
                   <li class="">
-                    <a href="projects.html">Danh sách đơn hàng</a>
+                    <a href="/admin/?view=carts.html">Danh sách đơn hàng</a>
                   </li>
                   <li class="">
-                    <a href="projects.html">Đơn hàng mới</a>
+                    <a href="/admin/?view=carts.html">Đơn hàng mới</a>
                   </li>
                   <li class="">
-                    <a href="application-ui.html">Đang hàng boom</a>
+                    <a href="/admin/?view=carts.html">Đang hàng boom</a>
                   </li>
                 </ul>
               </li>
               <li class="">
-                <a href="sign-out.html">
+                <a href="/admin/?view=sign-out.html">
                   <span class="nav-icon uil uil-sign-out-alt"></span>
                   <span class="menu-text">Log out</span>
                 </a>
@@ -478,7 +478,7 @@
                   <div class="breadcrumb-action justify-content-center flex-wrap">
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#"><i class="uil uil-estate"></i>Home</a>
+                        <li class="breadcrumb-item"><a href="/admin/?view=index.html"><i class="uil uil-estate"></i>Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Thêm sản phẩm mới</li>
                       </ol>
@@ -492,6 +492,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="product-add global-shadow px-sm-30 py-sm-50 radius-xl w-100 mb-40 bg-white px-0 py-20">
+              <form method="post" class="form-product" action="">
               <div class="row justify-content-center">
                 <div class="mb-30 row">
                   <div class="col-lg-6">
@@ -501,14 +502,14 @@
                     <div class="add-product__body px-sm-40 px-20">
                       <div class="form-group">
                         <label for="nameCar">Tên sản phẩm</label>
-                        <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Tên sản phẩm">
+                        <input type="text" class="form-control" name="nameProduct" id="nameCar" placeholder="Tên sản phẩm">
                       </div>
                       <div class="form-group">
                         <div class="countryOption">
                           <label for="type">
                             Loại sản phẩm
                           </label>
-                          <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Loại sản phẩm">
+                          <input type="text" class="form-control" name="productType" id="nameCar" placeholder="Loại sản phẩm">
                         </div>
                       </div>
                       <div class="form-group">
@@ -516,34 +517,34 @@
                           <label for="brand">
                             Thương hiệu
                           </label>
-                          <input type="text" class="form-control" name="nameCar" id="nameCar" placeholder="Tên thương hiệu">
+                          <input type="text" class="form-control" name="brand" id="nameCar" placeholder="Tên thương hiệu">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="nameOwner">giá sản phẩm</label>
-                        <input type="number" class="form-control" name="nameOwner" id="nameOwner"
+                        <input type="number" class="form-control" name="price" id="nameOwner"
                           placeholder="giá sản phẩm">
                       </div>
                       <div class="form-group">
                         <label for="CMT">số lượng sản phẩm</label>
-                        <input type="text" class="form-control" name="CMTOwner" id="CMT"
+                        <input type="number" class="form-control" name="quantity" id="CMT"
                           placeholder="số lượng sản phẩm">
                       </div>
                       <div class="form-group">
                         <label for="SDT">màu sắc</label>
-                        <input type="text" class="form-control" name="SDTOwner" id="SDT"
+                        <input type="text" class="form-control" name="color" id="SDT"
                           placeholder="Màu sắc">
                       </div>
                       <div class="form-group">
                         <label for="SDT">size</label>
-                        <input type="text" class="form-control" name="SDTOwner" id="SDT"
+                        <input type="text" class="form-control" name="size" id="SDT"
                           placeholder="size">
                       </div>
                     </div>
                     
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1">Mô tả</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+                      <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="8"
                         placeholder="Mô tả chi tiết của sản phẩm"></textarea>
                     </div>
                   </div>
@@ -557,7 +558,7 @@
                           <span class="upload-product-img d-block">
                             <span class="file-upload">
                               <img class="svg" src="../img/svg/upload.svg" alt="">
-                              <input id="upload" class="file-upload__input" type="file" name="thumbImg">
+                              <input id="upload" class="file-upload__input" type="file" name="image">
                             </span>
                             <span class="pera">Drag and drop an image</span>
                             <span>or <a href="#" class="color-secondary">Browse</a> to
@@ -567,15 +568,16 @@
                         </label>
                         <div class="upload-product-media d-flex justify-content-between align-items-center mt-25">
                           <div class="upload-media-area d-flex">
-                            <img src="../img/10f21pca002cr1---alloy2_1_2.jpg" alt="img">
+                            <div class="image-upload flex-wrap align-items-center d-flex p-2"></div>
+                            <!-- <img src="../img/10f21pca002cr1---alloy2_1_2.jpg" alt="img"> -->
                             <div class="upload-media-area__title d-flex align-items-center ms-10 flex-wrap">
-                              <div>
-                                <p>Product_image.jpg</p>
-                                <span>68.8 KB</span>
+                              <div class="image-attribute">
+                                <!-- <p>Product_image.jpg</p>
+                                <span>68.8 KB</span> -->
                               </div>
                               <div class="upload-media-area__btn">
-                                <button type="button" class="transparent rounded-circle wh-30 color-danger border-0">
-                                  <img class="svg" src="../img/svg/trash-2.svg" alt="">
+                                <button id="btn-delete" type="button" class="transparent rounded-circle wh-30 color-danger border-0">
+                                  <!-- <img class="svg" src="../img/svg/trash-2.svg" alt=""> -->
                                 </button>
                               </div>
                             </div>
@@ -589,10 +591,11 @@
 
                     </div>
                   </div>
+                </form>
                   <div class="button-group add-product-btn d-flex justify-content-sm-end justify-content-center mt-40">
-                    <button class="btn btn-light btn-default btn-squared fw-400 text-capitalize">Hủy thêm sản phẩm
+                    <button id="btn-cancel" class="btn btn-light btn-default btn-squared fw-400 text-capitalize">Hủy thêm sản phẩm
                     </button>
-                    <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize">Lưu sản phẩm mới
+                    <button id="btn-save-product" class="btn btn-primary btn-default btn-squared text-capitalize">Lưu sản phẩm mới
                     </button>
                   </div>
                 </div>
@@ -711,13 +714,13 @@
         </div>
       </div>
     </div>
+
+ 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgYKHZB_QKKLWfIRaYPCadza3nhTAbv7c"></script>
-
-    <script src="../js/plugins.min.js"></script>
-    <script src="../js/script.min.js"></script>
-
+    
+    <script src="../javascript/plugins.min.js"></script>
+    <script src="../javascript/script.min.js"></script>
+    <script src="../javascript/main.js"></script>
   </body>
-
-  <!-- Mirrored from demo.dashboardmarket.com/hexadash-html/ltr/add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Mar 2023 05:39:08 GMT -->
 
 </html>

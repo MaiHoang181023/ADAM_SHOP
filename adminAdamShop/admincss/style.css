@@ -21176,7 +21176,7 @@ table.table-rounded tbody tr td:last-child {
     width: 100%
 }
 
-.upload-media-area>img {
+.image-upload>img {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     width: 100px;

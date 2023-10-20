@@ -40,31 +40,33 @@
 <body>
      <div class="login-box">
           <h2>Sign-up</h2>
-          <form>
+          <form method="post" >
             <div class="user-box">
-              <input type="text" name="" required="">
+              <input type="text" name="username" required="true">
               <label>Username</label>
             </div>
             <div class="user-box">
-              <input type="password" name="" required="">
+              <input type="password" name="password" required="true">
               <label>Password</label>
             </div>
             <div class="user-box">
-               <input type="password" name="" required="">
+               <input type="password" name="confirmPassword" required="true">
                <label>Confirm Password</label>
              </div>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Submit
-            </a>
+               <a id="btn-submit">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <p style="color:azure">
+                  Submit
+                </p>
+               </a>
             <p class="text--center">
-               <span class="notify">
+               <span style="color:azure" class="notify">
                     Already have an account
                </span>
-               <a href="login.html" class="sign-up">Login now</a>
+               <a href="/?view=login.html" class="sign-up">Login now</a>
                <!-- <svg class="icon">
                     <use xlink:href="#icon-arrow-right"></use>
                </svg> -->
@@ -78,6 +80,56 @@
              </a> -->
           </form>
         </div>
-        <script src="../js/login.js"></script>
+        <script>
+          //lấy ô input của người dùng
+          const username = document.getElementsByName('username')[0]
+          const password = document.getElementsByName('password')[0]
+          const confirmPassword = document.getElementsByName('confirmPassword')[0]
+          const btn_submit = document.getElementById("btn-submit");
+
+          //tạo object chứa thông tin người dùng nhập
+          const valueInput = new Object()
+          username.onchange = () => {
+            valueInput.username = username.value
+          }
+          password.onchange = () => {
+            valueInput.password = password.value
+          }
+          confirmPassword.onchange = () => {
+            valueInput.confirmPassword = confirmPassword.value
+          }
+          btn_submit.onclick = () => {
+            if(valueInput.username && valueInput.password && valueInput.confirmPassword){
+              //tạo đối tượng XMLHttpRequest
+              const xhr = new XMLHttpRequest()
+    
+              // Thiết lập các thông số của yêu cầu
+              xhr.open("POST", "http://localhost:4000/account/register",true);
+              xhr.setRequestHeader('Content-Type', 'application/json');
+              // Đăng ký hàm xử lý sự kiện onreadystatechange
+              xhr.onreadystatechange = function() {
+                // Kiểm tra trạng thái của yêu cầu
+                if (xhr.readyState == 4) {
+                  if (xhr.status == 200) {
+                    alert(xhr.responseText)
+                    location.replace("http://localhost:4000");
+                  } else {
+                    // Yêu cầu thất bại
+                    // Xử lý lỗi nếu có
+                    alert(xhr.responseText);
+                  }
+                }
+              };
+              //chuyển object thành json để gửi lên sever
+              const json = JSON.stringify(valueInput)
+              // Gửi yêu cầu đến server
+              xhr.send(json);
+            }else {
+              alert('Bạn phải nhập đủ thông tin đăng nhập');
+            }
+          }
+
+        </script>
+        <!-- <script src="../js/login.js"></script> -->
 </body>
 </html>
